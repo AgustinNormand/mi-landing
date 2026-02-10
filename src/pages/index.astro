@@ -14,7 +14,7 @@ import "../styles/global.css";
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;700&display=swap"
 		/>
-		<title>Halo — Diseño que convierte</title>
+		<title>PiranhaSoftware — Diseño que convierte</title>
 	</head>
 	<body class="bg-slate-950 text-slate-100">
 		<div class="relative overflow-hidden">
@@ -28,14 +28,25 @@ import "../styles/global.css";
 			<header class="relative z-10">
 				<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
 					<div class="flex items-center gap-2 text-lg font-semibold" style="font-family: 'Space Grotesk', sans-serif;">
-						<span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-fuchsia-200">H</span>
-						Halo Studio
+						<span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-fuchsia-200">
+							<svg
+								aria-hidden="true"
+								viewBox="0 0 64 64"
+								class="h-6 w-6"
+								fill="currentColor"
+							>
+								<path d="M7 34c4.6-3.6 10.7-6 18-6h11.2l5-6 16 12-16 12-5-6H25c-7.3 0-13.4-2.4-18-6Z" />
+								<path d="M35 29.5 29 34l6 4.5-2.3-4.5 2.3-4.5Z" />
+								<circle cx="24.5" cy="28.5" r="2.5" />
+							</svg>
+						</span>
+						PiranhaSoftware
 					</div>
 					<div class="hidden items-center gap-8 text-sm text-slate-200 md:flex">
 						<a class="hover:text-white" href="#features">Features</a>
 						<a class="hover:text-white" href="#process">Proceso</a>
-						<a class="hover:text-white" href="#pricing">Planes</a>
 						<a class="hover:text-white" href="#faq">FAQ</a>
+						<a class="hover:text-white" href="#contact">Contacto</a>
 					</div>
 					<button
 						class="rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/20"
@@ -216,57 +227,6 @@ import "../styles/global.css";
 					</div>
 				</section>
 
-				<section id="pricing" class="mx-auto max-w-6xl px-6 py-20">
-					<div class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-						<div>
-							<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">Planes</p>
-							<h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
-								Una landing, tres niveles.
-							</h2>
-						</div>
-						<p class="max-w-md text-sm text-slate-300">
-							Sin contratos largos. Pagás por lanzamiento, iterás cuando quieras.
-						</p>
-					</div>
-					<div class="mt-12 grid gap-6 md:grid-cols-3">
-						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-							<p class="text-sm font-semibold">Launch</p>
-							<p class="mt-3 text-3xl font-semibold">$950</p>
-							<p class="mt-2 text-xs text-slate-300">Ideal para MVPs y validaciones.</p>
-							<ul class="mt-6 space-y-2 text-sm text-slate-300">
-								<li>1 página</li>
-								<li>Copy estructurado</li>
-								<li>Deploy incluido</li>
-							</ul>
-							<button class="mt-6 w-full rounded-2xl border border-white/20 py-2 text-sm">Elegir plan</button>
-						</div>
-						<div class="rounded-3xl border border-fuchsia-400/60 bg-fuchsia-500/10 p-6">
-							<p class="text-sm font-semibold text-fuchsia-100">Scale</p>
-							<p class="mt-3 text-3xl font-semibold">$1.650</p>
-							<p class="mt-2 text-xs text-slate-200">Nuestra recomendación.</p>
-							<ul class="mt-6 space-y-2 text-sm text-slate-200">
-								<li>1 landing + 2 variantes</li>
-								<li>Analytics + eventos</li>
-								<li>QA completo</li>
-							</ul>
-							<button class="mt-6 w-full rounded-2xl bg-fuchsia-400 py-2 text-sm font-semibold text-slate-900">
-								Empezar
-							</button>
-						</div>
-						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-							<p class="text-sm font-semibold">Enterprise</p>
-							<p class="mt-3 text-3xl font-semibold">Custom</p>
-							<p class="mt-2 text-xs text-slate-300">Para equipos y campañas multi-landing.</p>
-							<ul class="mt-6 space-y-2 text-sm text-slate-300">
-								<li>Research + workshops</li>
-								<li>Design system</li>
-								<li>Soporte continuo</li>
-							</ul>
-							<button class="mt-6 w-full rounded-2xl border border-white/20 py-2 text-sm">Hablar con ventas</button>
-						</div>
-					</div>
-				</section>
-
 				<section id="faq" class="mx-auto max-w-6xl px-6 py-20">
 					<div class="grid gap-8 md:grid-cols-2">
 						<div>
@@ -298,6 +258,35 @@ import "../styles/global.css";
 					</div>
 				</section>
 
+				<section id="contact" class="mx-auto max-w-6xl px-6 py-20">
+					<div class="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-8 md:grid-cols-2 md:items-center">
+						<div>
+							<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">Contacto</p>
+							<h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+								Hablemos de tu proyecto.
+							</h2>
+							<p class="mt-3 text-sm text-slate-300">
+								Escribinos o llamanos y coordinamos una llamada para definir objetivos, alcance y tiempos.
+							</p>
+						</div>
+						<div class="space-y-4 rounded-2xl bg-slate-900/60 p-6 text-sm text-slate-200">
+							<div class="flex items-center justify-between">
+								<span class="text-slate-400">Teléfono</span>
+								<a class="text-white hover:text-cyan-200" href="tel:+5492323610519">+54 9 2323 610519</a>
+							</div>
+							<div class="flex items-center justify-between">
+								<span class="text-slate-400">Email</span>
+								<a class="text-white hover:text-cyan-200" href="mailto:normandagustin@gmail.com">
+									normandagustin@gmail.com
+								</a>
+							</div>
+							<div class="rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-300">
+								Respuesta en 24-48h hábiles.
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<section class="mx-auto max-w-6xl px-6 pb-24">
 					<div class="rounded-3xl border border-white/10 bg-gradient-to-r from-fuchsia-500/20 via-white/5 to-cyan-400/20 p-10 text-center">
 						<h2 class="text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
@@ -320,7 +309,7 @@ import "../styles/global.css";
 
 			<footer class="border-t border-white/10">
 				<div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
-					<p class="text-sm text-slate-400">© 2026 Halo Studio. Buenos Aires.</p>
+					<p class="text-sm text-slate-400">© 2026 PiranhaSoftware. Buenos Aires.</p>
 					<div class="flex gap-6 text-sm text-slate-300">
 						<a class="hover:text-white" href="#">LinkedIn</a>
 						<a class="hover:text-white" href="#">Behance</a>
