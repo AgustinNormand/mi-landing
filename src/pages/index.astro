@@ -1,0 +1,333 @@
+---
+import "../styles/global.css";
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;700&display=swap"
+		/>
+		<title>Halo — Diseño que convierte</title>
+	</head>
+	<body class="bg-slate-950 text-slate-100">
+		<div class="relative overflow-hidden">
+			<div
+				class="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-fuchsia-400/30 blur-[120px]"
+			></div>
+			<div
+				class="pointer-events-none absolute -right-20 top-40 h-80 w-80 rounded-full bg-cyan-400/20 blur-[120px]"
+			></div>
+
+			<header class="relative z-10">
+				<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+					<div class="flex items-center gap-2 text-lg font-semibold" style="font-family: 'Space Grotesk', sans-serif;">
+						<span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-fuchsia-200">H</span>
+						Halo Studio
+					</div>
+					<div class="hidden items-center gap-8 text-sm text-slate-200 md:flex">
+						<a class="hover:text-white" href="#features">Features</a>
+						<a class="hover:text-white" href="#process">Proceso</a>
+						<a class="hover:text-white" href="#pricing">Planes</a>
+						<a class="hover:text-white" href="#faq">FAQ</a>
+					</div>
+					<button
+						class="rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/20"
+					>
+						Agendá una demo
+					</button>
+				</nav>
+			</header>
+
+			<main class="relative z-10">
+				<section class="mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-12 md:flex-row md:items-center">
+					<div class="flex-1">
+						<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">Landing kit 2026</p>
+						<h1
+							class="mt-4 text-4xl font-semibold leading-tight text-white md:text-6xl"
+							style="font-family: 'Fraunces', serif;"
+						>
+							Diseño que convierte visitas en ventas, en semanas.
+						</h1>
+						<p class="mt-6 max-w-xl text-lg text-slate-200">
+							Creamos landings con narrativa clara, UI premium y performance impecable.
+							Elegí un stack moderno, lanzá rápido y medí todo desde el día uno.
+						</p>
+						<div class="mt-8 flex flex-wrap items-center gap-4">
+							<button
+								class="rounded-full bg-fuchsia-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-fuchsia-400/30"
+							>
+								Quiero mi landing
+							</button>
+							<button class="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/90">
+								Ver casos reales
+							</button>
+							<div class="flex items-center gap-2 text-xs text-slate-300">
+								<span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+								Disponible para Marzo
+							</div>
+						</div>
+					</div>
+					<div class="flex-1">
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+							<div class="flex items-center justify-between text-xs text-slate-300">
+								<span>Dashboard</span>
+								<span>v2.7</span>
+							</div>
+							<div class="mt-4 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
+								<p class="text-sm text-slate-300">Conversiones</p>
+								<p class="mt-2 text-3xl font-semibold text-white">+38%</p>
+								<div class="mt-6 grid grid-cols-3 gap-3 text-xs text-slate-300">
+									<div class="rounded-xl bg-white/5 p-3">
+										<p>Tiempo</p>
+										<p class="mt-1 text-lg text-white">11d</p>
+									</div>
+									<div class="rounded-xl bg-white/5 p-3">
+										<p>CTR</p>
+										<p class="mt-1 text-lg text-white">7.8%</p>
+									</div>
+									<div class="rounded-xl bg-white/5 p-3">
+										<p>NPS</p>
+										<p class="mt-1 text-lg text-white">62</p>
+									</div>
+								</div>
+							</div>
+							<div class="mt-6 flex items-center justify-between text-xs text-slate-300">
+								<span>Insights</span>
+								<span>Actualizado hoy</span>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mx-auto max-w-6xl px-6 pb-16">
+					<div class="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-8 md:grid-cols-3">
+						<div>
+							<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Clientes</p>
+							<p class="mt-3 text-2xl font-semibold">+120 lanzamientos</p>
+							<p class="mt-2 text-sm text-slate-300">SaaS, fintech, educación y e-commerce.</p>
+						</div>
+						<div>
+							<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Tiempo medio</p>
+							<p class="mt-3 text-2xl font-semibold">18 días</p>
+							<p class="mt-2 text-sm text-slate-300">Brief a producción sin fricción.</p>
+						</div>
+						<div>
+							<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Retención</p>
+							<p class="mt-3 text-2xl font-semibold">84%</p>
+							<p class="mt-2 text-sm text-slate-300">Equipos que vuelven por iteraciones.</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="features" class="mx-auto max-w-6xl px-6 py-20">
+					<div class="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
+						<div>
+							<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">Todo listo</p>
+							<h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+								Un sistema completo para crecer.
+							</h2>
+						</div>
+						<p class="max-w-md text-sm text-slate-300">
+							No solo diseño: copy, estructura, UX writing y performance. Un kit listo para publicar.
+						</p>
+					</div>
+					<div class="mt-12 grid gap-6 md:grid-cols-3">
+						<div class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6">
+							<p class="text-sm font-semibold">Narrativa clara</p>
+							<p class="mt-3 text-sm text-slate-300">
+								Storytelling de valor con CTA precisos, sin ruido.
+							</p>
+						</div>
+						<div class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6">
+							<p class="text-sm font-semibold">Performance first</p>
+							<p class="mt-3 text-sm text-slate-300">
+								Lighthouse verde, assets optimizados y tracking completo.
+							</p>
+						</div>
+						<div class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6">
+							<p class="text-sm font-semibold">Iteración rápida</p>
+							<p class="mt-3 text-sm text-slate-300">
+								Sprints de 48h para test A/B y mejoras.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="process" class="mx-auto max-w-6xl px-6 py-20">
+					<div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+						<h2 class="text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+							Proceso en 3 pasos
+						</h2>
+						<div class="mt-8 grid gap-6 md:grid-cols-3">
+							<div class="rounded-2xl bg-slate-900/60 p-6">
+								<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Semana 1</p>
+								<p class="mt-3 text-lg font-semibold">Discovery</p>
+								<p class="mt-2 text-sm text-slate-300">Definimos mensaje, público y estructura.</p>
+							</div>
+							<div class="rounded-2xl bg-slate-900/60 p-6">
+								<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Semana 2</p>
+								<p class="mt-3 text-lg font-semibold">Producción</p>
+								<p class="mt-2 text-sm text-slate-300">UI, copy, assets y animaciones.</p>
+							</div>
+							<div class="rounded-2xl bg-slate-900/60 p-6">
+								<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Semana 3</p>
+								<p class="mt-3 text-lg font-semibold">Lanzamiento</p>
+								<p class="mt-2 text-sm text-slate-300">QA, tracking y deploy.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mx-auto max-w-6xl px-6 py-20">
+					<div class="grid gap-8 md:grid-cols-2">
+						<div class="rounded-3xl border border-white/10 bg-gradient-to-br from-fuchsia-500/20 to-cyan-400/10 p-8">
+							<p class="text-xs uppercase tracking-[0.2em] text-slate-200">Testimonios</p>
+							<p class="mt-4 text-2xl font-semibold">“Triplicamos leads en 21 días.”</p>
+							<p class="mt-2 text-sm text-slate-200">
+								El equipo nos ordenó el mensaje y nos dio un sistema para iterar. El primer mes ya
+								superó nuestras metas.
+							</p>
+							<p class="mt-4 text-xs text-slate-300">— Sofi, Growth Lead en Flux</p>
+						</div>
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+							<p class="text-xs uppercase tracking-[0.2em] text-slate-400">Resultados reales</p>
+							<div class="mt-6 grid gap-4">
+								<div class="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3">
+									<p class="text-sm">Pipeline calificado</p>
+									<p class="text-sm text-emerald-300">+64%</p>
+								</div>
+								<div class="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3">
+									<p class="text-sm">Costo por lead</p>
+									<p class="text-sm text-emerald-300">-22%</p>
+								</div>
+								<div class="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3">
+									<p class="text-sm">Tiempo en página</p>
+									<p class="text-sm text-emerald-300">+41%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="pricing" class="mx-auto max-w-6xl px-6 py-20">
+					<div class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+						<div>
+							<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">Planes</p>
+							<h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+								Una landing, tres niveles.
+							</h2>
+						</div>
+						<p class="max-w-md text-sm text-slate-300">
+							Sin contratos largos. Pagás por lanzamiento, iterás cuando quieras.
+						</p>
+					</div>
+					<div class="mt-12 grid gap-6 md:grid-cols-3">
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+							<p class="text-sm font-semibold">Launch</p>
+							<p class="mt-3 text-3xl font-semibold">$950</p>
+							<p class="mt-2 text-xs text-slate-300">Ideal para MVPs y validaciones.</p>
+							<ul class="mt-6 space-y-2 text-sm text-slate-300">
+								<li>1 página</li>
+								<li>Copy estructurado</li>
+								<li>Deploy incluido</li>
+							</ul>
+							<button class="mt-6 w-full rounded-2xl border border-white/20 py-2 text-sm">Elegir plan</button>
+						</div>
+						<div class="rounded-3xl border border-fuchsia-400/60 bg-fuchsia-500/10 p-6">
+							<p class="text-sm font-semibold text-fuchsia-100">Scale</p>
+							<p class="mt-3 text-3xl font-semibold">$1.650</p>
+							<p class="mt-2 text-xs text-slate-200">Nuestra recomendación.</p>
+							<ul class="mt-6 space-y-2 text-sm text-slate-200">
+								<li>1 landing + 2 variantes</li>
+								<li>Analytics + eventos</li>
+								<li>QA completo</li>
+							</ul>
+							<button class="mt-6 w-full rounded-2xl bg-fuchsia-400 py-2 text-sm font-semibold text-slate-900">
+								Empezar
+							</button>
+						</div>
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+							<p class="text-sm font-semibold">Enterprise</p>
+							<p class="mt-3 text-3xl font-semibold">Custom</p>
+							<p class="mt-2 text-xs text-slate-300">Para equipos y campañas multi-landing.</p>
+							<ul class="mt-6 space-y-2 text-sm text-slate-300">
+								<li>Research + workshops</li>
+								<li>Design system</li>
+								<li>Soporte continuo</li>
+							</ul>
+							<button class="mt-6 w-full rounded-2xl border border-white/20 py-2 text-sm">Hablar con ventas</button>
+						</div>
+					</div>
+				</section>
+
+				<section id="faq" class="mx-auto max-w-6xl px-6 py-20">
+					<div class="grid gap-8 md:grid-cols-2">
+						<div>
+							<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">FAQ</p>
+							<h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+								Respuestas claras.
+							</h2>
+						</div>
+						<div class="space-y-6">
+							<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+								<p class="text-sm font-semibold">¿Trabajan con mi equipo interno?</p>
+								<p class="mt-2 text-sm text-slate-300">
+									Sí, nos integramos con marketing, producto o ventas para alinear el mensaje.
+								</p>
+							</div>
+							<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+								<p class="text-sm font-semibold">¿Puedo iterar luego del lanzamiento?</p>
+								<p class="mt-2 text-sm text-slate-300">
+									Claro. Tenemos sprints de optimización y tests A/B.
+								</p>
+							</div>
+							<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+								<p class="text-sm font-semibold">¿Entregan código editable?</p>
+								<p class="mt-2 text-sm text-slate-300">
+									Sí, todo queda documentado y en tu repositorio.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mx-auto max-w-6xl px-6 pb-24">
+					<div class="rounded-3xl border border-white/10 bg-gradient-to-r from-fuchsia-500/20 via-white/5 to-cyan-400/20 p-10 text-center">
+						<h2 class="text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+							Listos para lanzar tu próxima landing.
+						</h2>
+						<p class="mt-3 text-sm text-slate-200">
+							Contanos tu proyecto y te enviamos un plan en 48 horas.
+						</p>
+						<div class="mt-6 flex flex-wrap justify-center gap-4">
+							<button class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900">
+								Solicitar propuesta
+							</button>
+							<button class="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/90">
+								Ver calendario
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="border-t border-white/10">
+				<div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+					<p class="text-sm text-slate-400">© 2026 Halo Studio. Buenos Aires.</p>
+					<div class="flex gap-6 text-sm text-slate-300">
+						<a class="hover:text-white" href="#">LinkedIn</a>
+						<a class="hover:text-white" href="#">Behance</a>
+						<a class="hover:text-white" href="#">Contacto</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
