@@ -15,6 +15,10 @@ import { LEGAL } from "../legal";
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;700&display=swap"
 		/>
+		<meta
+			name="description"
+			content="Desarrollo de software a medida y sistema de turnos con recordatorios por WhatsApp para consultorios."
+		/>
 		<title>PiranhaSoftware — Desarrollo a medida</title>
 	</head>
 	<body class="bg-slate-950 text-slate-100">
@@ -46,6 +50,7 @@ import { LEGAL } from "../legal";
 					<div class="hidden items-center gap-8 text-sm text-slate-200 md:flex">
 						<a class="hover:text-white" href="#skills">Conocimientos</a>
 						<a class="hover:text-white" href="#projects">Proyectos</a>
+						<a class="hover:text-white" href="#turnos">Turnos</a>
 						<a class="hover:text-white" href="#process">Proceso</a>
 						<a class="hover:text-white" href="#faq">FAQ</a>
 						<a class="hover:text-white" href="#contact">Contacto</a>
@@ -227,11 +232,51 @@ import { LEGAL } from "../legal";
 							<p class="mt-2 text-sm text-slate-300">
 								Sensores de calidad de agua, alertas y tableros en tiempo real.
 							</p>
-						<div class="mt-4 flex gap-4 text-sm">
-							<a class="text-cyan-200 hover:text-white" href="#">Ver avances</a>
-						</div>
 						</article>
 					</div>
+				</section>
+
+				<section id="turnos" class="mx-auto max-w-6xl px-6 py-20">
+					<div class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+						<div>
+							<p class="text-xs uppercase tracking-[0.3em] text-cyan-200">Turnos y WhatsApp</p>
+							<h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Fraunces', serif;">
+								Turnos y avisos por WhatsApp para consultorios.
+							</h2>
+						</div>
+						<p class="max-w-md text-sm text-slate-300">
+							Un sistema para que cada consultorio gestione su agenda y avise a sus pacientes por los
+							canales que ya usan.
+						</p>
+					</div>
+					<div class="mt-10 grid gap-6 md:grid-cols-3">
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+							<p class="text-sm font-semibold">Agenda y reservas online</p>
+							<p class="mt-3 text-sm text-slate-300">
+								Profesionales, horarios y pacientes en un panel. Los pacientes sacan turno desde el sitio
+								del consultorio.
+							</p>
+						</div>
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+							<p class="text-sm font-semibold">Avisos por la API oficial de WhatsApp</p>
+							<p class="mt-3 text-sm text-slate-300">
+								Confirmación, cambio, cancelación y recordatorio del turno, enviados con la API oficial de
+								WhatsApp Business desde el número del propio consultorio, con su nombre.
+							</p>
+						</div>
+						<div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+							<p class="text-sm font-semibold">El número sigue siendo del consultorio</p>
+							<p class="mt-3 text-sm text-slate-300">
+								El consultorio conecta su WhatsApp en un paso desde el panel y lo sigue usando como
+								siempre: los pacientes pueden responder los avisos.
+							</p>
+						</div>
+					</div>
+					<p class="mt-6 text-sm text-slate-400">
+						Cómo tratamos los datos de los pacientes: <a class="text-cyan-200 hover:text-white" href="/privacidad"
+							>política de privacidad</a
+						>.
+					</p>
 				</section>
 
 				<section id="process" class="mx-auto max-w-6xl px-6 py-20">
