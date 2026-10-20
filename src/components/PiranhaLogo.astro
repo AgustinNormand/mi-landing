@@ -1,0 +1,29 @@
+---
+// Logo de PiranhaSoftware. Mismo dibujo que public/favicon.svg y que el ícono de la app de Meta
+// (public/icono-1024.png), recortado al pez y sin fondo.
+interface Props {
+	class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<svg aria-hidden="true" viewBox="150 220 740 560" class={className}>
+	<defs>
+		<linearGradient id="piranha-degrade" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#e879f9"></stop>
+			<stop offset="1" stop-color="#22d3ee"></stop>
+		</linearGradient>
+	</defs>
+	<g fill="url(#piranha-degrade)">
+		<path d="M330 512 L170 360 Q215 512 170 664 Z"></path>
+		<path d="M470 352 Q540 250 640 240 Q600 300 610 350 Z"></path>
+		<path d="M500 660 Q540 740 610 760 Q585 710 600 668 Z"></path>
+		<path d="M320 512 Q420 340 640 340 Q790 345 850 470 L720 500 L870 548 Q800 690 600 690 Q420 688 320 512 Z"></path>
+	</g>
+	<g fill="#ffffff">
+		<path d="M757 495.5 L783 488.4 L770 516 Z M792 485.8 L818 478.7 L805 507 Z M827 476.3 L853 469.2 L840 497 Z"></path>
+		<path d="M772 519.4 L798 527 L785 498 Z M809 530.2 L835 537.8 L822 509 Z M845 540.7 L867 547.2 L857 520 Z"></path>
+	</g>
+	<circle cx="700" cy="430" r="28" fill="#020617"></circle>
+	<circle cx="708" cy="424" r="8" fill="#ffffff"></circle>
+</svg>
