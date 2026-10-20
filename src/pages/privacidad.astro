@@ -1,0 +1,117 @@
+---
+import Legal from "../layouts/Legal.astro";
+import { LEGAL } from "../legal";
+---
+
+<Legal title="Política de privacidad">
+	<p>
+		Esta política explica qué datos personales trata {LEGAL.marca} ({LEGAL.titular}, CUIT {LEGAL.cuit}, con domicilio en
+		{LEGAL.ciudad}), para qué los usa y qué derechos tenés sobre ellos. Se aplica a este sitio y al software de gestión de
+		turnos y avisos que {LEGAL.marca} provee a consultorios y otros negocios (en adelante, «el servicio»).
+	</p>
+
+	<h2>1. Quién es responsable de tus datos</h2>
+	<p>
+		Cuando sos paciente o cliente de un negocio que usa el servicio, ese negocio es el <strong>responsable</strong> de tus
+		datos: decide qué carga y para qué. {LEGAL.marca} actúa como <strong>encargado del tratamiento</strong>: los guarda y
+		procesa sólo para prestarle el servicio a ese negocio, siguiendo sus instrucciones, y no los usa para nada más.
+	</p>
+	<p>
+		Cuando sos titular o personal de un negocio que contrata el servicio, o nos escribís por este sitio,
+		{LEGAL.marca} es el responsable de esos datos.
+	</p>
+
+	<h2>2. Qué datos tratamos</h2>
+	<ul>
+		<li><strong>De identificación y contacto:</strong> nombre, apellido, DNI, correo electrónico y número de teléfono o WhatsApp.</li>
+		<li><strong>De turnos:</strong> fecha, hora, profesional, estado del turno y los avisos enviados (confirmación, cambio, cancelación y recordatorio).</li>
+		<li>
+			<strong>De salud:</strong> si el negocio es un consultorio de salud, el profesional puede registrar información clínica.
+			Son datos sensibles: sólo acceden los profesionales que el consultorio habilita y nunca se envían por WhatsApp.
+		</li>
+		<li><strong>De mensajería:</strong> el número del destinatario, el contenido de los avisos y su estado de entrega y lectura informado por WhatsApp. Si respondés un aviso, el mensaje le llega al negocio.</li>
+		<li><strong>De cuentas del negocio:</strong> datos de las personas que usan el panel y de la facturación de la suscripción.</li>
+		<li><strong>Técnicos:</strong> dirección IP y registros de acceso, usados para seguridad y para prevenir abusos.</li>
+	</ul>
+
+	<h2>3. Para qué los usamos</h2>
+	<ul>
+		<li>Gestionar los turnos y enviar los avisos por correo electrónico y WhatsApp que el negocio configuró.</li>
+		<li>Permitir que el negocio y sus profesionales lleven sus registros.</li>
+		<li>Mantener el servicio seguro, disponible y funcionando.</li>
+		<li>Cobrarle la suscripción al negocio y contestar consultas.</li>
+	</ul>
+	<p>
+		<strong>No vendemos datos personales, no los usamos para publicidad y no los compartimos con otros negocios.</strong>
+		Los datos de cada negocio están separados de los de los demás.
+	</p>
+
+	<h2>4. Con quién los compartimos</h2>
+	<p>Sólo con los proveedores que hacen falta para prestar el servicio, y sólo en la medida necesaria:</p>
+	<ul>
+		<li><strong>Google Cloud</strong> (alojamiento y base de datos, en servidores de Estados Unidos).</li>
+		<li><strong>Meta Platforms</strong> (WhatsApp Business Platform), para enviar los avisos desde el número de WhatsApp del negocio.</li>
+		<li><strong>Resend</strong>, para enviar los correos electrónicos.</li>
+		<li><strong>Mercado Pago</strong>, para cobrar la suscripción de los negocios.</li>
+	</ul>
+	<p>
+		Algunos de estos proveedores procesan los datos fuera de la Argentina. Elegimos proveedores que ofrecen niveles adecuados
+		de protección. También podemos revelar datos si lo exige una autoridad competente conforme a la ley.
+	</p>
+
+	<h2>5. WhatsApp</h2>
+	<p>
+		Los avisos por WhatsApp se envían a través de la API oficial de WhatsApp Business, desde el número del negocio y con su
+		nombre. El negocio es quien decide activarlos, y debe contar con el consentimiento de sus pacientes o clientes para
+		escribirles por ese medio. Los datos que pasan por WhatsApp también se rigen por las políticas de Meta. Si no querés
+		recibir avisos por WhatsApp, pedíselo al negocio o escribinos.
+	</p>
+
+	<h2>6. Cuánto tiempo los guardamos</h2>
+	<p>
+		Mientras el negocio use el servicio. Si deja de usarlo, se le entregan sus datos y se eliminan dentro de los 90 días
+		posteriores, salvo los que debamos conservar por obligación legal (por ejemplo, plazos de conservación de la
+		documentación clínica o fiscal).
+	</p>
+
+	<h2>7. Seguridad</h2>
+	<p>
+		Usamos conexiones cifradas (HTTPS), cifrado de las credenciales sensibles, control de acceso por roles, doble factor de
+		autenticación para la administración y copias de seguridad.
+	</p>
+
+	<h2 id="eliminacion">8. Tus derechos y cómo pedir que se borren tus datos</h2>
+	<p>
+		Podés pedir acceder a tus datos, rectificarlos, actualizarlos o suprimirlos, conforme a la Ley 25.326 de Protección de
+		Datos Personales. Para eso:
+	</p>
+	<ul>
+		<li>Si sos paciente o cliente de un negocio, lo más rápido es pedírselo a ese negocio.</li>
+		<li>
+			También podés escribirnos a <a href={`mailto:${LEGAL.email}`}>{LEGAL.email}</a> con el asunto «Eliminación de datos»,
+			indicando tu nombre, tu teléfono o correo y el negocio en el que te atendés. Te respondemos dentro de los 10 días
+			hábiles y confirmamos cuando los datos se eliminaron.
+		</li>
+	</ul>
+	<p>
+		El acceso a tus datos es gratuito en intervalos no inferiores a seis meses, salvo que acredites un interés legítimo.
+		La Agencia de Acceso a la Información Pública, en su carácter de órgano de control de la Ley 25.326, tiene la
+		atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre
+		protección de datos personales.
+	</p>
+
+	<h2>9. Este sitio</h2>
+	<p>
+		Este sitio no usa cookies ni herramientas de seguimiento. Las fuentes tipográficas se descargan desde Google Fonts.
+	</p>
+
+	<h2>10. Cambios</h2>
+	<p>
+		Si cambiamos esta política, publicamos la nueva versión en esta página con su fecha de actualización.
+	</p>
+
+	<h2>11. Contacto</h2>
+	<p>
+		{LEGAL.titular} — <a href={`mailto:${LEGAL.email}`}>{LEGAL.email}</a>
+	</p>
+</Legal>

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { LEGAL } from "../legal";
 
 ---
 
@@ -70,8 +71,9 @@ import "../styles/global.css";
 						</h1>
 						<p class="mt-6 max-w-xl text-lg text-slate-200">
 							Desarrollo productos propios y proyectos personalizados. Actualmente tengo en producción una
-							app de carreras de running, una plataforma de gestión de gimnasios, y estoy construyendo un
-							sistema de monitoreo para estanques de piscicultura.
+							app de carreras de running, una plataforma de gestión de gimnasios, un sistema de turnos con
+							recordatorios por WhatsApp para consultorios, y estoy construyendo un sistema de monitoreo
+							para estanques de piscicultura.
 						</p>
 						<div class="mt-8 flex flex-wrap items-center gap-4">
 							<a
@@ -182,7 +184,7 @@ import "../styles/global.css";
 							Incluyo enlaces y capturas para que puedas ver los avances y resultados.
 						</p>
 					</div>
-					<div class="mt-10 grid gap-6 md:grid-cols-3">
+					<div class="mt-10 grid gap-6 md:grid-cols-2">
 						<article class="rounded-3xl border border-white/10 bg-white/5 p-6">
 							<div class="flex items-center justify-between text-xs text-slate-300">
 								<span>Running</span>
@@ -204,6 +206,17 @@ import "../styles/global.css";
 								Socios, pagos, rutinas, asistencia y reportes en un solo panel.
 							</p>
 
+						</article>
+						<article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+							<div class="flex items-center justify-between text-xs text-slate-300">
+								<span>Salud</span>
+								<span>Producción</span>
+							</div>
+							<h3 class="mt-4 text-lg font-semibold">Turnos para consultorios</h3>
+							<p class="mt-2 text-sm text-slate-300">
+								Agenda, reservas online y avisos de confirmación y recordatorio por WhatsApp, enviados
+								desde el número del consultorio.
+							</p>
 						</article>
 						<article class="rounded-3xl border border-white/10 bg-white/5 p-6">
 							<div class="flex items-center justify-between text-xs text-slate-300">
@@ -314,8 +327,8 @@ import "../styles/global.css";
 							</div>
 							<div class="flex items-center justify-between">
 								<span class="text-slate-400">Email</span>
-								<a class="text-white hover:text-cyan-200" href="mailto:normandagustin@gmail.com">
-									normandagustin@gmail.com
+								<a class="text-white hover:text-cyan-200" href={`mailto:${LEGAL.email}`}>
+									{LEGAL.email}
 								</a>
 							</div>
 							<div class="rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-300">
@@ -328,10 +341,14 @@ import "../styles/global.css";
 
 			<footer class="border-t border-white/10">
 				<div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
-					<p class="text-sm text-slate-400">© 2026 PiranhaSoftware. Buenos Aires.</p>
+					<p class="text-sm text-slate-400">
+						© 2026 {LEGAL.marca} — {LEGAL.titular}, CUIT {LEGAL.cuit}. {LEGAL.ciudad}.
+					</p>
 					<div class="flex gap-6 text-sm text-slate-300">
 						<a class="hover:text-white" href="#projects">Proyectos</a>
 						<a class="hover:text-white" href="#contact">Contacto</a>
+						<a class="hover:text-white" href="/privacidad">Privacidad</a>
+						<a class="hover:text-white" href="/terminos">Términos</a>
 					</div>
 				</div>
 			</footer>

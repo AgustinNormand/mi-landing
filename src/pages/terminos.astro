@@ -1,0 +1,72 @@
+---
+import Legal from "../layouts/Legal.astro";
+import { LEGAL } from "../legal";
+---
+
+<Legal title="Términos y condiciones">
+	<p>
+		Estos términos regulan el uso del software de gestión de turnos y avisos que {LEGAL.marca} ({LEGAL.titular}, CUIT
+		{LEGAL.cuit}) provee a consultorios y otros negocios («el servicio»). Al contratar o usar el servicio, el negocio los
+		acepta.
+	</p>
+
+	<h2>1. El servicio</h2>
+	<p>
+		El servicio permite al negocio publicar su agenda, recibir reservas online, administrar profesionales y pacientes o
+		clientes, llevar sus registros y enviar avisos por correo electrónico y por WhatsApp. Las funciones disponibles pueden
+		variar según lo acordado con cada negocio.
+	</p>
+
+	<h2>2. Suscripción y pago</h2>
+	<p>
+		El servicio se paga mediante una suscripción mensual cuyo importe se informa al negocio antes de contratar. Si la
+		suscripción vence y no se paga dentro del plazo de gracia, pueden suspenderse las funciones de gestión administrativa;
+		la agenda y los datos del negocio siguen disponibles para él.
+	</p>
+
+	<h2>3. WhatsApp</h2>
+	<p>
+		Para enviar avisos por WhatsApp, el negocio conecta su propio número a través de la plataforma de WhatsApp Business de
+		Meta y acepta las condiciones de Meta. Los cargos que Meta cobra por cada mensaje corren por cuenta del negocio y se
+		pagan directamente a Meta. El negocio es responsable de contar con el consentimiento de las personas a quienes les
+		escribe y de cumplir las políticas de mensajería de WhatsApp. {LEGAL.marca} no envía mensajes promocionales en nombre
+		del negocio.
+	</p>
+
+	<h2>4. Obligaciones del negocio</h2>
+	<ul>
+		<li>Cargar datos verdaderos y tener una base legal para tratar los datos de sus pacientes o clientes.</li>
+		<li>Mantener la confidencialidad de sus credenciales de acceso.</li>
+		<li>No usar el servicio para enviar spam ni para actividades ilegales.</li>
+	</ul>
+
+	<h2>5. Datos</h2>
+	<p>
+		Los datos que el negocio carga son suyos. {LEGAL.marca} los trata como encargado, según la
+		<a href="/privacidad">política de privacidad</a>. Si el negocio deja de usar el servicio, puede pedir una copia de sus
+		datos.
+	</p>
+
+	<h2>6. Disponibilidad y responsabilidad</h2>
+	<p>
+		{LEGAL.marca} hace lo razonable para que el servicio funcione de forma continua y segura, pero puede haber
+		interrupciones por mantenimiento o por fallas de terceros (alojamiento, WhatsApp, correo). {LEGAL.marca} no responde
+		por daños indirectos ni por las decisiones que el negocio tome a partir de la información cargada en el servicio.
+	</p>
+
+	<h2>7. Cambios y baja</h2>
+	<p>
+		{LEGAL.marca} puede modificar estos términos avisando al negocio con al menos 30 días de anticipación. El negocio puede
+		dar de baja el servicio en cualquier momento.
+	</p>
+
+	<h2>8. Ley aplicable</h2>
+	<p>
+		Estos términos se rigen por las leyes de la República Argentina.
+	</p>
+
+	<h2>9. Contacto</h2>
+	<p>
+		<a href={`mailto:${LEGAL.email}`}>{LEGAL.email}</a>
+	</p>
+</Legal>
